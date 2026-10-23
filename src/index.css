@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Prompt', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: 'Plus Jakarta Sans', 'Prompt', sans-serif;
+  }
+  .font-mono-lcd, .font-mono {
+    font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+  }
+}
+
+/* Custom Sleek Scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #f0f4f8;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* LCD Glow and Digital Display Animations */
+@keyframes lcd-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+
+.animate-lcd-blink {
+  animation: lcd-blink 1.2s infinite;
+}
+
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.02); }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 2s ease-in-out infinite;
+}
+

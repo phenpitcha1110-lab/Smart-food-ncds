@@ -1,0 +1,10 @@
+{
+  "name": "AI Nutrition Meal Estimator - ระบบประเมินแคลอรีมื้ออาหาร",
+  "description": "นวัตกรรมระบบประเมินแคลอรีและสารอาหารสำหรับผู้ป่วยเบาหวานและกลุ่ม NCDs ด้วย AI จากชื่อเมนู สัดส่วนวัตถุดิบ และรูปถ่าย (ไม่ต้องชั่งน้ำหนัก) พร้อมวิเคราะห์ความเหมาะสมและแนะนำการปรับมื้อต่อไปตามเกณฑ์ BMI และบันทึกสถิติ 14 วัน",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
